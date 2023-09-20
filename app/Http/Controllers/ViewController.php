@@ -13,4 +13,7 @@ class ViewController extends Controller
     public function laporan(){
         return view('main/laporan');
     }
+    public function contack(){
+        return view('main/contack');
+    }
 }

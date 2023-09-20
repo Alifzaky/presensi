@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ViewController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,4 +18,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('home',[App\Http\Controllers\ViewController::class,'index']);
-Route::get('/laporan',[app\Http\Controllers\ViewController::class,'laporan']);
+Route::get('/laporan',[App\Http\Controllers\ViewController::class,'laporan']);
+Route::get('/contack',[App\Http\Controllers\ViewController::class,'contack']);
+Route::get('/navbar',[App\Http\Controllers\ViewController::class,'navbar']);
